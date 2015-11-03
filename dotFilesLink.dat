@@ -1,0 +1,3 @@
+mklink /D %HOMEPATH%"\.gitconfig" %HOMEPATH%"\dotfiles\.gitconfig"
+mklink /D %HOMEPATH%"\.gemrc" %HOMEPATH%"\dotfiles\gemrc"
+exit 0
