@@ -1,8 +1,15 @@
 # alias
 alias mysql="mysql --pager='less -S'"
 
-# OSごとに違うカラーオプションに対応
-if [ "$(uname)" = 'Darwin' ]; then
+# OSごとに違うlsのカラーオプションに対応
+which gls > /dev/null 2>&1
+if [ $? -eq 0 ] ; then
+    # macの場合の設定。brew install coreutils してdircolors-solarizedを
+    # 指定のディレクトリに入れてください
+    eval 'gdircolors ~/src/dircolors-solarized/dircolors.ansi-universal'
+    alias ls='gls -alF --color=auto'
+
+elif [ "$(uname)" = 'Darwin' ]; then
     export LSCOLORS=xbfxcxdxbxegedabagacad
     alias ls='ls -alGF'
 else
