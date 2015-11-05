@@ -21,6 +21,7 @@ l = log --graph --name-status --pretty=format:\"%C(red)%h %C(green)%an %Creset%s
 
 s = status --short --branch
 co = checkout
+cm = commit
 
 # 行ごとの差分ではなく，単語レベルでの差分を色付きで表示する
 difff = diff --word-diff
