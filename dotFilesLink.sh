@@ -9,3 +9,5 @@ for file in `find ~/dotfiles -name '.*' | awk -F/ '{print $NF}'` ; do
     echo "create symbolic link of" $file
     ln -sf ~/dotfiles/$file ~/$file
 done
+
+chmod 705 ~/dotfiles/.*
