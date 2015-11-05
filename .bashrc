@@ -1,5 +1,6 @@
 # alias
 alias mysql="mysql --pager='less -S'"
+alias vagrant-ups="vagrant up && vagrant ssh"
 
 # OSごとに違うlsのカラーオプションに対応
 which gls > /dev/null 2>&1
