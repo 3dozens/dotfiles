@@ -1,6 +1,7 @@
 # alias
 alias mysql="mysql --pager='less -S'"
 alias vagrant-ups="vagrant up && vagrant ssh"
+alias railss="rails s -b 0.0.0.0"
 
 # OSごとに違うlsのカラーオプションに対応
 which gls > /dev/null 2>&1
@@ -14,7 +15,7 @@ elif [ "$(uname)" = 'Darwin' ]; then
     export LSCOLORS=xbfxcxdxbxegedabagacad
     alias ls='ls -alGF'
 else
-    eval `dircolors ~/.colorrc`
+    # eval `dircolors ~/.colorrc`
     alias ls='ls -alF --color=auto'
 fi
 
