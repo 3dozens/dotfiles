@@ -56,11 +56,14 @@ plugins=(rails git)
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 # export MANPATH="/usr/local/man:$MANPATH"
 
+# zsh settings
 source $ZSH/oh-my-zsh.sh
-
 setopt hist_ignore_all_dups
 
+# ruby settings
 export RUBYGEMS_GEMDEPS=-
+export PATH="$HOME/.rbenv/bin:$PATH"
+eval "$(rbenv init -)"
 
 alias mysql="mysql --pager='less -S'"
 
