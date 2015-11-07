@@ -22,7 +22,7 @@ set helplang=en
 
 colorscheme desert
 
-nnoremap <Space>w  :<C-u>w<CR>
+nnoremap <Space>w  :<C-u>wq<CR>
 nnoremap <Space>q  :<C-u>q<CR>
 nnoremap <Space>Q  :<C-u>q!<CR>
 
