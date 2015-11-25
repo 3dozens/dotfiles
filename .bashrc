@@ -1,1 +1,1 @@
-source .common
+source ~/dotfiles/.common
