@@ -62,22 +62,6 @@ setopt hist_ignore_all_dups
 
 source .common
 
-# ruby settings
-#export RUBYGEMS_GEMDEPS=-
-#export PATH="$HOME/.rbenv/bin:$PATH"
-#eval "$(rbenv init -)"
-
-#alias mysql="mysql --pager='less -S'"
-
-# OSごとに違うカラーオプションに対応
-#if [ "$(uname)" = 'Darwin' ]; then
-#    export LSCOLORS=xbfxcxdxbxegedabagacad
-#    alias ls='ls -alGF'
-#else
-#    eval `dircolors ~/.colorrc`
-#    alias ls='ls -alF --color=auto'
-#fi
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
