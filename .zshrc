@@ -60,21 +60,23 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 setopt hist_ignore_all_dups
 
-# ruby settings
-export RUBYGEMS_GEMDEPS=-
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+source .common
 
-alias mysql="mysql --pager='less -S'"
+# ruby settings
+#export RUBYGEMS_GEMDEPS=-
+#export PATH="$HOME/.rbenv/bin:$PATH"
+#eval "$(rbenv init -)"
+
+#alias mysql="mysql --pager='less -S'"
 
 # OSごとに違うカラーオプションに対応
-if [ "$(uname)" = 'Darwin' ]; then
-    export LSCOLORS=xbfxcxdxbxegedabagacad
-    alias ls='ls -alGF'
-else
-    eval `dircolors ~/.colorrc`
-    alias ls='ls -alF --color=auto'
-fi
+#if [ "$(uname)" = 'Darwin' ]; then
+#    export LSCOLORS=xbfxcxdxbxegedabagacad
+#    alias ls='ls -alGF'
+#else
+#    eval `dircolors ~/.colorrc`
+#    alias ls='ls -alF --color=auto'
+#fi
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
