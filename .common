@@ -22,7 +22,9 @@ else # その他のOSの場合
     alias ls='ls -alF --color=auto'
 fi
 
+export PATH="/usr/local/bin:/usr/local/wine/bin:$PATH"
+
 # Ruby周りの設定
-export RUBYGEMS_GEMDEPS=-
-export PATH="/usr/local/wine/bin:$HOME/.rbenv/bin:$PATH"
+export RUBYGEMS_GEMDEPS=
+export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
