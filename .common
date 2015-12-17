@@ -1,9 +1,12 @@
 alias mysql="mysql --pager='less -S'"
-alias vagrant-ups="vagrant up && vagrant ssh"
 alias railss="bin/rails s -b 0.0.0.0"
 alias porg-install="porg -lD make install"
 alias reboot-shell="exec -l $SHELL"
 alias filepath="find `pwd` -maxdepth 1 -mindepth 1"
+
+alias vu="vagrant up && vagrant ssh"
+alias vh="vagrant halt"
+alias vs="vagrant ssh"
 
 # OSごとに違うlsのカラーオプションに対応
 which gls > /dev/null 2>&1
