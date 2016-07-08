@@ -19,6 +19,7 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 set helplang=en
+set clipboard=unnamed,autoselect
 
 colorscheme desert
 
@@ -92,4 +93,3 @@ cnoremap <C-a>  <C-b>
 cnoremap <C-e>  <C-e>
 cnoremap <C-u> <C-e><C-u>
 cnoremap <C-v> <C-f>a
-
