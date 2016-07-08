@@ -1,0 +1,15 @@
+export PATH="/usr/local/Cellar/git/2.9.0/bin:/usr/local/bin:/usr/local/wine/bin:/usr/local/Cellar/vim/7.4.1941/bin:$PATH"
+
+# OSごとに違うlsのカラーオプションに対応
+which gls > /dev/null 2>&1
+if [ $? -eq 0 ] ; then # glsコマンドが存在する
+  # brew install coreutils してdircolors-solarizedを
+  # 指定のディレクトリに入れてください
+  eval 'gdircolors ~/src/dircolors-solarized/dircolors.ansi-universal'
+  alias ls='gls -alF --color=auto'
+  
+else # glsが存在しないOSXの場合
+  export LSCOLORS=xbfxcxdxbxegedabagacad
+  alias ls='ls -alGF'
+fi
+
