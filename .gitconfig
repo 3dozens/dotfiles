@@ -29,6 +29,9 @@ recommit = commit --amend --no-edit
 # 行ごとの差分ではなく，単語レベルでの差分を色付きで表示する
 difff = diff --word-diff
 
+# addしたもののdiffを見る
+added-diff = diff --cached
+
 # マージ済みのブランチを削除
 delete-merged-branches = !git branch --merged | grep -vE '^\\*|master$|develop$' | xargs -I % git branch -d %
 
