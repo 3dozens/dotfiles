@@ -20,6 +20,8 @@ if [ "$(uname)" != 'Darwin' ]; then
 fi
 
 # Ruby周りの設定
-export RUBYGEMS_GEMDEPS=
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ -e ~/.rbenv ]; then
+  export RUBYGEMS_GEMDEPS=
+  export PATH="~/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
