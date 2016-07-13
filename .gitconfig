@@ -24,7 +24,7 @@ s = status --short --branch
 co = checkout
 cm = commit
 cmm = commit -m
-cmam = commit -am
+cmam = !git add . && git commit -m
 recommit = commit --amend --no-edit
 
 # 行ごとの差分ではなく，単語レベルでの差分を色付きで表示する
