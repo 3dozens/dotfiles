@@ -1,8 +1,16 @@
+# OS固有の設定ファイルを読み込む
 if [ "$(uname)" = 'Darwin' ]; then # macOSの場合
   echo loading .mac
   source ~/dotfiles/.mac
 fi
 
+# 環境固有の設定ファイルを読み込む
+if [ -e ~/dotfiles/.local ]; then
+    echo loading .local
+    source ~/dotfiles/.local
+fi
+
+# エイリアスの設定
 alias mysql="mysql --pager='less -S'"
 alias railss="bin/rails s -b 0.0.0.0"
 alias porg-install="porg -lD make install"
@@ -13,15 +21,17 @@ alias vu="vagrant up && vagrant ssh"
 alias vh="vagrant halt"
 alias vs="vagrant ssh"
 
-# macOS出ない場合のlsのカラーセッティング
+# macOSでない場合のlsのカラーセッティング
 if [ "$(uname)" != 'Darwin' ]; then
     # eval `dircolors ~/.colorrc`
     alias ls='ls -alF --color=auto'
 fi
 
 # Ruby周りの設定
-export RUBYGEMS_GEMDEPS=
-export PATH="$HOME/.rbenv/bin:$PATH"
-eval "$(rbenv init -)"
+if [ -e ~/.rbenv ]; then
+  export RUBYGEMS_GEMDEPS=
+  export PATH="~/.rbenv/bin:$PATH"
+  eval "$(rbenv init -)"
+fi
 
 export EDITOR=vim
