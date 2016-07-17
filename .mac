@@ -13,3 +13,6 @@ else # glsが存在しないOSXの場合
   alias ls='ls -alGF'
 fi
 
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+  . $(brew --prefix)/etc/bash_completion
+fi
