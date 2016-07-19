@@ -1,2 +1,2 @@
-echo loading .common
-source ~/dotfiles/.common
+echo loading .loader
+source ~/dotfiles/.loader

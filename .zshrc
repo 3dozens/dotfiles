@@ -62,7 +62,8 @@ export PATH=$HOME/bin:/usr/local/bin:$PATH
 source $ZSH/oh-my-zsh.sh
 setopt hist_ignore_all_dups
 
-source ~/dotfiles/.common
+echo loading .loader
+source ~/dotfiles/.loader
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8

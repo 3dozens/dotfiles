@@ -1,15 +1,3 @@
-# OS固有の設定ファイルを読み込む
-if [ "$(uname)" = 'Darwin' ]; then # macOSの場合
-  echo loading .mac
-  source ~/dotfiles/.mac
-fi
-
-# 環境固有の設定ファイルを読み込む
-if [ -e ~/dotfiles/.local ]; then
-    echo loading .local
-    source ~/dotfiles/.local
-fi
-
 # エイリアスの設定
 alias mysql="mysql --pager='less -S'"
 alias railss="bin/rails s -b 0.0.0.0"
