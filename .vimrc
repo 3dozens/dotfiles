@@ -93,3 +93,9 @@ cnoremap <C-a>  <C-b>
 cnoremap <C-e>  <C-e>
 cnoremap <C-u> <C-e><C-u>
 cnoremap <C-v> <C-f>a
+" auto comment off
+augroup auto_comment_off
+    autocmd!
+    autocmd BufEnter * setlocal formatoptions-=r
+    autocmd BufEnter * setlocal formatoptions-=o
+augroup END
