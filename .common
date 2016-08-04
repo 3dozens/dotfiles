@@ -1,13 +1,18 @@
 # エイリアスの設定
+
+# Vagrant
+alias vu="vagrant up && vagrant ssh"
+alias vh="vagrant halt"
+alias vs="vagrant ssh"
+
+# miscellaneous
 alias mysql="mysql --pager='less -S'"
 alias railss="bin/rails s -b 0.0.0.0"
 alias porg-install="porg -lD make install"
 alias reboot-shell="exec -l $SHELL"
 alias filepath="find `pwd` -maxdepth 1 -mindepth 1"
-
-alias vu="vagrant up && vagrant ssh"
-alias vh="vagrant halt"
-alias vs="vagrant ssh"
+alias cp="cp -v"
+alias mv="mv -v"
 
 # macOSでない場合のlsのカラーセッティング
 if [ "$(uname)" != 'Darwin' ]; then
