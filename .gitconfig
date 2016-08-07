@@ -9,8 +9,6 @@ autocrlf = input
 default = simple # git v1.8以前でこの設定をするとエラーになるので、その場合は消す
 # [pull]
 # rebase = preserve
-[merge]
-ff = false
 [diff]
 renames = true # http://qiita.com/yuya_presto/items/ef199e08021dea777715
 [alias]
