@@ -17,7 +17,7 @@ alias mv="mv -v"
 # macOSでない場合のlsのカラーセッティング
 if [ "$(uname)" != 'Darwin' ]; then
     # eval `dircolors ~/.colorrc`
-    alias ls='ls -alF --color=auto'
+    alias ls='ls -alhF --color=auto'
 fi
 
 # Ruby周りの設定
