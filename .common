@@ -1,5 +1,10 @@
 # エイリアスの設定
 
+# Haskell
+alias ghc='stack ghc --'
+alias ghci='stack ghci --'
+alias runhaskell='stack runhaskell --'
+
 # Vagrant
 alias vu="vagrant up && vagrant ssh"
 alias vh="vagrant halt"
