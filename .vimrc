@@ -23,6 +23,8 @@ set clipboard=unnamed,autoselect
 
 colorscheme desert
 
+nnoremap <ESC><ESC> :nohlsearch<CR>
+
 " Force saving files that require root permission 
 cnoremap w!! w !sudo tee > /dev/null %
 " auto comment off
