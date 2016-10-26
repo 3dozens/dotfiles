@@ -20,6 +20,8 @@ set shiftwidth=2
 set helplang=en
 set clipboard=unnamed,autoselect
 
+inoremap <C-j> <ESC>
+
 colorscheme desert
 
 " Force saving files that require root permission 
