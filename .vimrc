@@ -22,6 +22,10 @@ set helplang=en
 set clipboard=unnamed,autoselect
 
 inoremap <C-j> <ESC>
+inoremap { {}<Left>
+inoremap {<Enter> {}<Left><CR><ESC><S-o>
+inoremap ( ()<ESC>i
+inoremap (<Enter> ()<Left><CR><ESC><S-o>
 
 colorscheme desert
 
