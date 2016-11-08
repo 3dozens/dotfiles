@@ -16,8 +16,8 @@ set hidden
 set history=2000
 set smartindent
 set expandtab
-set shiftwidth=2
-set tabstop=2
+set shiftwidth=4
+set tabstop=4
 set helplang=en
 set clipboard=unnamed,autoselect
 
