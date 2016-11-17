@@ -3,7 +3,7 @@ syntax enable
 set number
 set ruler
 set list
-set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<,eol:↲
+set listchars=tab:>-,trail:-,nbsp:%,extends:>,precedes:<
 set incsearch
 set hlsearch
 set wrap
@@ -23,6 +23,7 @@ set clipboard=unnamed,autoselect
 set encoding=utf-8
 set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set fileformats=unix,dos,mac
+set whichwrap=b,s,h,l,<,>,[,],(J~(B
 
 inoremap <C-j> <ESC>
 inoremap { {}<Left>
