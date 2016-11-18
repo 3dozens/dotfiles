@@ -23,13 +23,16 @@ set clipboard=unnamed,autoselect
 set encoding=utf-8
 set fileencodings=iso-2022-jp,euc-jp,sjis,utf-8
 set fileformats=unix,dos,mac
-set whichwrap=b,s,h,l,<,>,[,],(J~(B
+set whichwrap=b,s,h,l,<,>,[,],~
 
 inoremap <C-j> <ESC>
 inoremap { {}<Left>
 inoremap {<Enter> {}<Left><CR><ESC><S-o>
 inoremap ( ()<ESC>i
 inoremap (<Enter> ()<Left><CR><ESC><S-o>
+inoremap [ []<Left>
+inoremap ' ''<Left>
+inoremap " ""<Left>
 
 colorscheme desert
 
