@@ -37,8 +37,9 @@ inoremap " ""<Left>
 colorscheme desert
 
 nnoremap <ESC><ESC> :nohlsearch<CR>
-nnoremap :Q :q!
+nnoremap Y y$
 
+cnoremap Q q!
 " Force saving files that require root permission 
 cnoremap w!! w !sudo tee > /dev/null %
 " auto comment off
