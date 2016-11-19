@@ -40,6 +40,10 @@ nnoremap <ESC><ESC> :nohlsearch<CR>
 nnoremap Y y$
 
 cnoremap Q q!
+cnoremap vs<Enter> vs<Enter><C-w>l
+cnoremap sp<Enter> sp<Enter><C-w>j
+cnoremap Ve<Enter> Ve<Enter><C-w>L
+cnoremap S<Enter>  S<Enter><C-w>J
 " Force saving files that require root permission 
 cnoremap w!! w !sudo tee > /dev/null %
 " auto comment off
