@@ -38,6 +38,10 @@ colorscheme desert
 
 nnoremap <ESC><ESC> :nohlsearch<CR>
 nnoremap Y y$
+nnoremap j gj
+nnoremap k gk
+nnoremap gj j
+nnoremap gk k
 
 cnoremap Q q!
 cnoremap vs<Enter> vs<Enter><C-w>l
