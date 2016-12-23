@@ -42,6 +42,7 @@ nnoremap j gj
 nnoremap k gk
 nnoremap gj j
 nnoremap gk k
+nnoremap x "_x
 
 cnoremap Q q!
 cnoremap vs<Enter> vs<Enter><C-w>l
