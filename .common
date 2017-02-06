@@ -18,6 +18,7 @@ alias reboot-shell="exec -l $SHELL"
 alias filepath="find `pwd` -maxdepth 1 -mindepth 1"
 alias cp="cp -v"
 alias mv="mv -v"
+alias rm="rm -v"
 
 # macOSでない場合のlsのカラーセッティング
 if [ "$(uname)" != 'Darwin' ]; then
