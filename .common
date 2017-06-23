@@ -34,3 +34,5 @@ if [ -e ~/.rbenv ]; then
 fi
 
 export EDITOR=vim
+# manをVimで開く https://rcmdnk.com/blog/2014/07/20/computer-vim/
+export MANPAGER="/bin/sh -c \"col -b -x|vim -R -c 'set ft=man nolist nonu noma' -\""
