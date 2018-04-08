@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 not_create=(".git" ".gitignore"  ".mac" ".loader" ".common")
 for file in `find ~/dotfiles -name '.*' | awk -F/ '{print $NF}'` ; do
