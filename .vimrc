@@ -55,6 +55,9 @@ cnoremap w!! w !sudo tee > /dev/null %
 
 let g:loaded_logipat = 1
 
+" netrwは常にtree view
+let g:netrw_liststyle = 3
+
 " auto comment off
 augroup auto_comment_off
     autocmd!
