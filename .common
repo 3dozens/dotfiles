@@ -23,7 +23,7 @@ alias rm="rm -v"
 # macOSでない場合のlsのカラーセッティング
 if [ "$(uname)" != 'Darwin' ]; then
     # eval `dircolors ~/.colorrc`
-    alias ls='ls -alhF --color=auto'
+    alias ls='ls -alvhF --color=auto'
 fi
 
 # Ruby周りの設定
